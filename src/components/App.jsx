@@ -57,12 +57,12 @@ export const App = () => {
         setImages(prevImages => [...prevImages, ...hits]);
         setLoadMore(page < Math.ceil(totalHits / 12))
       } catch (error) {
-        setError(true)
-      } finally { 
+        setError(true);
+       } finally { 
         setLoading(false)
       }
     } getPhotos()
-   }, [query,page])
+   }, [query, page, error])
 
   return (
     <Layout>
