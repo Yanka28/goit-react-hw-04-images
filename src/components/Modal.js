@@ -1,5 +1,4 @@
 import { Overlay, ModalImg } from './Modal.styled';
-// import { Component } from 'react';
 import { useEffect } from 'react';
 
 export const Modal = ({ onClose, src }) => {
